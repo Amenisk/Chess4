@@ -1,8 +1,9 @@
 //Ziyatdinov Kamil 220 group "Chess 4" ?.06.2022
 
 using System;
+using ChessCore;
 
-namespace Chess_3
+namespace ChessConsole
 {
     class Program
     {
