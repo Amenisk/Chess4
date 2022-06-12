@@ -9,26 +9,22 @@ namespace ChessConsole
     {
         static void Main(string[] args)
         {
-            King king = new King("E7");
-            king.Move("E8");
-            king.Move(1, 5);
+            Console.WriteLine(1234);
+            string chessName = Console.ReadLine();
+            int x1 = Convert.ToInt32(Console.ReadLine());
+            int y1 = Convert.ToInt32(Console.ReadLine());
+            int x2 = Convert.ToInt32(Console.ReadLine());
+            int y2 = Convert.ToInt32(Console.ReadLine());
 
-            Queen queen = new Queen(2, 4);
-            queen.Move(1, 4);
-            queen.Move(2, 9);
-
-            Bishop bishop = new Bishop("D5");
-            bishop.Move("B3");
-            bishop.Move(2, 3);
-
-
-            Rook rook = new Rook(5, 5);
-            rook.Move(0, 5);
-            rook.Move("E8");
-
-            Knight knight = new Knight("A1");
-            knight.Move("B3");
-            knight.Move("H8");
+            try
+            {
+                Chessman chessman = ChessmanMaker.MakeFigure(chessName, x1, y2);
+                chessman.Move(x2, y2);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex);
+            }
         }
     }
 }
