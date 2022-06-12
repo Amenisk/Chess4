@@ -45,6 +45,12 @@ namespace ChessCore
         {
             return true;
         }
+
+        public bool isRightMove(string pos)
+        {
+            return isRightMove(letters[pos[0]], int.Parse(pos[1].ToString()));
+        }
+                                                                                
         public void Move(string move)
         {
             int x = letters[move[0]];
@@ -90,7 +96,7 @@ namespace ChessCore
         public Bishop(int x, int y) : base(x, y) { }
         public override bool isRightMove(int x, int y)
         {
-            return Math.Abs(X - x) == Math.Abs(Y - y);
+            return Math.Abs(X - x) == Math.Abs(Y - y) && (X != x || Y != y);
         }
     }
 
@@ -100,7 +106,8 @@ namespace ChessCore
         public King(int x, int y) : base(x, y) { }
         public override bool isRightMove(int x, int y)
         {
-            return Math.Abs(X - x) <= 1 && Math.Abs(Y - y) <= 1;
+            return Math.Abs(X - x) <= 1 && Math.Abs(Y - y) <= 1
+                && (X != x || Y != y);
         }
     }
 
@@ -111,7 +118,8 @@ namespace ChessCore
         public override bool isRightMove(int x, int y)
         {
             return Math.Abs(X - x) == 1 && Math.Abs(Y - y) == 2
-                || Math.Abs(X - x) == 2 && Math.Abs(Y - y) == 1;
+                || Math.Abs(X - x) == 2 && Math.Abs(Y - y) == 1
+                && (X != x || Y != y);
         }
     }
 
@@ -121,7 +129,8 @@ namespace ChessCore
         public Queen(int x, int y) : base(x, y) { }
         public override bool isRightMove(int x, int y)
         {
-            return (Math.Abs(X - x) == Math.Abs(Y - y)) || (X == x || Y == y);
+            return (Math.Abs(X - x) == Math.Abs(Y - y))
+                || (X == x || Y == y) && (X != x || Y != y);
         }
     }
 
@@ -131,7 +140,7 @@ namespace ChessCore
         public Rook(int x, int y) : base(x, y) { }
         public override bool isRightMove(int x, int y)
         {
-            return X == x || Y == y;
+            return (X == x || Y == y) && (X != x || Y != y);
         }
     }
 
@@ -141,7 +150,7 @@ namespace ChessCore
         public Pawn(int x, int y) : base(x, y) { }
         public override bool isRightMove(int x, int y)
         {
-            return (y - 1 == Y || y + 1 == Y) && x == X;
+            return (Y + 1 == y) && x == X;
         }
     }
     
