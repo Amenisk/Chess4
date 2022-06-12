@@ -35,7 +35,7 @@ public static class ChessmanMaker
             case "Pawn":
             case "6":
             case "P":
-                return new King(x, y);
+                return new Pawn(x, y);
 
             default:
                 throw new Exception("This kind of chessman is not found!");

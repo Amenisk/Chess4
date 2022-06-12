@@ -97,9 +97,7 @@ namespace ChessCore
     public class King : Chessman
     {
         public King(string position) : base(position) { }
-
         public King(int x, int y) : base(x, y) { }
-
         public override bool isRightMove(int x, int y)
         {
             return Math.Abs(X - x) <= 1 && Math.Abs(Y - y) <= 1;
@@ -109,9 +107,7 @@ namespace ChessCore
     public class Knight : Chessman
     {
         public Knight(string position) : base(position) { }
-
         public Knight(int x, int y) : base(x, y) { }
-
         public override bool isRightMove(int x, int y)
         {
             return Math.Abs(X - x) == 1 && Math.Abs(Y - y) == 2
@@ -122,9 +118,7 @@ namespace ChessCore
     public class Queen : Chessman
     {
         public Queen(string position) : base(position) { }
-
         public Queen(int x, int y) : base(x, y) { }
-
         public override bool isRightMove(int x, int y)
         {
             return (Math.Abs(X - x) == Math.Abs(Y - y)) || (X == x || Y == y);
@@ -134,12 +128,20 @@ namespace ChessCore
     public class Rook : Chessman
     {
         public Rook(string position) : base(position) { }
-
         public Rook(int x, int y) : base(x, y) { }
-
         public override bool isRightMove(int x, int y)
         {
             return X == x || Y == y;
+        }
+    }
+
+    public class Pawn : Chessman
+    {
+        public Pawn(string position) : base(position) { }
+        public Pawn(int x, int y) : base(x, y) { }
+        public override bool isRightMove(int x, int y)
+        {
+            return (y - 1 == Y || y + 1 == Y) && x == X;
         }
     }
     

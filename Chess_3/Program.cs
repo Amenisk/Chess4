@@ -9,7 +9,6 @@ namespace ChessConsole
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(1234);
             string chessName = Console.ReadLine();
             int x1 = Convert.ToInt32(Console.ReadLine());
             int y1 = Convert.ToInt32(Console.ReadLine());
@@ -18,7 +17,7 @@ namespace ChessConsole
 
             try
             {
-                Chessman chessman = ChessmanMaker.MakeFigure(chessName, x1, y2);
+                Chessman chessman = ChessmanMaker.MakeFigure(chessName, x1, y1);
                 chessman.Move(x2, y2);
             }
             catch (Exception ex)

@@ -5,8 +5,136 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ChessBoard"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="ChessBoard" Height="850" Width="1050">
+    <Window.Resources>
+        <Style x:Key="FirstField" TargetType="Button">
+            <Setter Property="FontSize" Value="18" />
+            <Setter Property="Background" Value="Black" />
+        </Style>
+        <Style x:Key="SecondField" TargetType="Button">
+            <Setter Property="FontSize" Value="18" />
+            <Setter Property="Background" Value="White" />
+        </Style>
+        <Style x:Key="Incription" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="32" />
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+            <Setter Property="HorizontalAlignment" Value="Center" />
+        </Style>
+    </Window.Resources>
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="50"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Button Content="" Grid.Row="0" Grid.Column="1" Style="{StaticResource SecondField}"></Button>
+        <Button Content="" Grid.Row="0" Grid.Column="2" Style="{StaticResource FirstField}"></Button>
+        <Button Content="" Grid.Row="0" Grid.Column="3" Style="{StaticResource SecondField}"></Button>
+        <Button Content="" Grid.Row="0" Grid.Column="4" Style="{StaticResource FirstField}"></Button>
+        <Button Content="" Grid.Row="0" Grid.Column="5" Style="{StaticResource SecondField}"></Button>
+        <Button Content="" Grid.Row="0" Grid.Column="6" Style="{StaticResource FirstField}"></Button>
+        <Button Content="" Grid.Row="0" Grid.Column="7" Style="{StaticResource SecondField}"></Button>
+        <Button Content="" Grid.Row="0" Grid.Column="8" Style="{StaticResource FirstField}"></Button>
 
+        <Button Content="" Grid.Row="1" Grid.Column="1" Style="{StaticResource FirstField}" />
+        <Button Content="" Grid.Row="1" Grid.Column="2" Style="{StaticResource SecondField}" />
+        <Button Content="" Grid.Row="1" Grid.Column="3" Style="{StaticResource FirstField}" />
+        <Button Content="" Grid.Row="1" Grid.Column="4" Style="{StaticResource SecondField}" />
+        <Button Content="" Grid.Row="1" Grid.Column="5" Style="{StaticResource FirstField}" />
+        <Button Content="" Grid.Row="1" Grid.Column="6" Style="{StaticResource SecondField}" />
+        <Button Content="" Grid.Row="1" Grid.Column="7" Style="{StaticResource FirstField}" />
+        <Button Content="" Grid.Row="1" Grid.Column="8" Style="{StaticResource SecondField}" />
+
+        <Button Content="" Grid.Row="2" Grid.Column="1" Style="{StaticResource SecondField}" />
+        <Button Content="" Grid.Row="2" Grid.Column="2" Style="{StaticResource FirstField}" />
+        <Button Content="" Grid.Row="2" Grid.Column="3" Style="{StaticResource SecondField}" />
+        <Button Content="" Grid.Row="2" Grid.Column="4" Style="{StaticResource FirstField}" />
+        <Button Content="" Grid.Row="2" Grid.Column="5" Style="{StaticResource SecondField}" />
+        <Button Content="" Grid.Row="2" Grid.Column="6" Style="{StaticResource FirstField}" />
+        <Button Content="" Grid.Row="2" Grid.Column="7" Style="{StaticResource SecondField}" />
+        <Button Content="" Grid.Row="2" Grid.Column="8" Style="{StaticResource FirstField}" />
+
+        <Button Content="" Grid.Row="3" Grid.Column="1" Style="{StaticResource FirstField}"  />
+        <Button Content="" Grid.Row="3" Grid.Column="2" Style="{StaticResource SecondField}" />
+        <Button Content="" Grid.Row="3" Grid.Column="3" Style="{StaticResource FirstField}" />
+        <Button Content="" Grid.Row="3" Grid.Column="4" Style="{StaticResource SecondField}" />
+        <Button Content="" Grid.Row="3" Grid.Column="5" Style="{StaticResource FirstField}" />
+        <Button Content="" Grid.Row="3" Grid.Column="6" Style="{StaticResource SecondField}" />
+        <Button Content="" Grid.Row="3" Grid.Column="7" Style="{StaticResource FirstField}" />
+        <Button Content="" Grid.Row="3" Grid.Column="8" Style="{StaticResource SecondField}" />
+
+        <Button Content="" Grid.Row="4" Grid.Column="1" Style="{StaticResource SecondField}" />
+        <Button Content="" Grid.Row="4" Grid.Column="2" Style="{StaticResource FirstField}" />
+        <Button Content="" Grid.Row="4" Grid.Column="3" Style="{StaticResource SecondField}" />
+        <Button Content="" Grid.Row="4" Grid.Column="4" Style="{StaticResource FirstField}" />
+        <Button Content="" Grid.Row="4" Grid.Column="5" Style="{StaticResource SecondField}" />
+        <Button Content="" Grid.Row="4" Grid.Column="6" Style="{StaticResource FirstField}" />
+        <Button Content="" Grid.Row="4" Grid.Column="7" Style="{StaticResource SecondField}" />
+        <Button Content="" Grid.Row="4" Grid.Column="8" Style="{StaticResource FirstField}" />
+
+        <Button Content="" Grid.Row="5" Grid.Column="1" Style="{StaticResource FirstField}" />
+        <Button Content="" Grid.Row="5" Grid.Column="2" Style="{StaticResource SecondField}" />
+        <Button Content="" Grid.Row="5" Grid.Column="3" Style="{StaticResource FirstField}" />
+        <Button Content="" Grid.Row="5" Grid.Column="4" Style="{StaticResource SecondField}" />
+        <Button Content="" Grid.Row="5" Grid.Column="5" Style="{StaticResource FirstField}" />
+        <Button Content="" Grid.Row="5" Grid.Column="6" Style="{StaticResource SecondField}" />
+        <Button Content="" Grid.Row="5" Grid.Column="7" Style="{StaticResource FirstField}" />
+        <Button Content="" Grid.Row="5" Grid.Column="8" Style="{StaticResource SecondField}" />
+
+        <Button Content="" Grid.Row="6" Grid.Column="1" Style="{StaticResource SecondField}" />
+        <Button Content="" Grid.Row="6" Grid.Column="2" Style="{StaticResource FirstField}" />
+        <Button Content="" Grid.Row="6" Grid.Column="3" Style="{StaticResource SecondField}" />
+        <Button Content="" Grid.Row="6" Grid.Column="4" Style="{StaticResource FirstField}" />
+        <Button Content="" Grid.Row="6" Grid.Column="5" Style="{StaticResource SecondField}" />
+        <Button Content="" Grid.Row="6" Grid.Column="6" Style="{StaticResource FirstField}" />
+        <Button Content="" Grid.Row="6" Grid.Column="7" Style="{StaticResource SecondField}" />
+        <Button Content="" Grid.Row="6" Grid.Column="8" Style="{StaticResource FirstField}" />
+
+        <Button Content="" Grid.Row="7" Grid.Column="1" Style="{StaticResource FirstField}" />
+        <Button Content="" Grid.Row="7" Grid.Column="2" Style="{StaticResource SecondField}" />
+        <Button Content="" Grid.Row="7" Grid.Column="3" Style="{StaticResource FirstField}" />
+        <Button Content="" Grid.Row="7" Grid.Column="4" Style="{StaticResource SecondField}" />
+        <Button Content="" Grid.Row="7" Grid.Column="5" Style="{StaticResource FirstField}" />
+        <Button Content="" Grid.Row="7" Grid.Column="6" Style="{StaticResource SecondField}" />
+        <Button Content="" Grid.Row="7" Grid.Column="7" Style="{StaticResource FirstField}" />
+        <Button Content="" Grid.Row="7" Grid.Column="8" Style="{StaticResource SecondField}" />
+
+        <TextBlock Grid.Row="0" Grid.Column="0" Style="{StaticResource Incription}">8</TextBlock>
+        <TextBlock Grid.Row="1" Grid.Column="0" Style="{StaticResource Incription}">7</TextBlock>
+        <TextBlock Grid.Row="2" Grid.Column="0" Style="{StaticResource Incription}">6</TextBlock>
+        <TextBlock Grid.Row="3" Grid.Column="0" Style="{StaticResource Incription}">5</TextBlock>
+        <TextBlock Grid.Row="4" Grid.Column="0" Style="{StaticResource Incription}">4</TextBlock>
+        <TextBlock Grid.Row="5" Grid.Column="0" Style="{StaticResource Incription}">3</TextBlock>
+        <TextBlock Grid.Row="6" Grid.Column="0" Style="{StaticResource Incription}">2</TextBlock>
+        <TextBlock Grid.Row="7" Grid.Column="0" Style="{StaticResource Incription}">1</TextBlock>
+
+        <TextBlock Grid.Row="8" Grid.Column="1" Style="{StaticResource Incription}">a</TextBlock>
+        <TextBlock Grid.Row="8" Grid.Column="2" Style="{StaticResource Incription}">b</TextBlock>
+        <TextBlock Grid.Row="8" Grid.Column="3" Style="{StaticResource Incription}">c</TextBlock>
+        <TextBlock Grid.Row="8" Grid.Column="4" Style="{StaticResource Incription}">d</TextBlock>
+        <TextBlock Grid.Row="8" Grid.Column="5" Style="{StaticResource Incription}">e</TextBlock>
+        <TextBlock Grid.Row="8" Grid.Column="6" Style="{StaticResource Incription}">f</TextBlock>
+        <TextBlock Grid.Row="8" Grid.Column="7" Style="{StaticResource Incription}">g</TextBlock>
+        <TextBlock Grid.Row="8" Grid.Column="8" Style="{StaticResource Incription}">h</TextBlock>
     </Grid>
 </Window>
