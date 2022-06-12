@@ -20,9 +20,23 @@ namespace ChessBoard
     /// </summary>
     public partial class MainWindow : Window
     {
+        string selectedChessman;
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void Chessmans_Selected(object sender, RoutedEventArgs e)
+        {
+            selectedChessman = ((sender as ListBox).SelectedItem as ListBoxItem).Name; 
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            if (selectedChessman != null)
+            {
+                (sender as Button).Content = selectedChessman;
+            }
         }
     }
 }

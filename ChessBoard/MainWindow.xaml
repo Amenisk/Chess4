@@ -9,10 +9,12 @@
     <Window.Resources>
         <Style x:Key="FirstField" TargetType="Button">
             <Setter Property="FontSize" Value="18" />
+            <Setter Property="Foreground" Value="White" />
             <Setter Property="Background" Value="Black" />
         </Style>
         <Style x:Key="SecondField" TargetType="Button">
             <Setter Property="FontSize" Value="18" />
+            <Setter Property="Foreground" Value="Black" />
             <Setter Property="Background" Value="White" />
         </Style>
         <Style x:Key="Incription" TargetType="TextBlock">
@@ -47,77 +49,77 @@
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        <Button Content="" Grid.Row="0" Grid.Column="1" Style="{StaticResource SecondField}"></Button>
-        <Button Content="" Grid.Row="0" Grid.Column="2" Style="{StaticResource FirstField}"></Button>
-        <Button Content="" Grid.Row="0" Grid.Column="3" Style="{StaticResource SecondField}"></Button>
-        <Button Content="" Grid.Row="0" Grid.Column="4" Style="{StaticResource FirstField}"></Button>
-        <Button Content="" Grid.Row="0" Grid.Column="5" Style="{StaticResource SecondField}"></Button>
-        <Button Content="" Grid.Row="0" Grid.Column="6" Style="{StaticResource FirstField}"></Button>
-        <Button Content="" Grid.Row="0" Grid.Column="7" Style="{StaticResource SecondField}"></Button>
+        <Button Content="" Grid.Row="0" Grid.Column="1" Style="{StaticResource SecondField}" Click="Button_Click"></Button>
+        <Button Content="" Grid.Row="0" Grid.Column="2" Style="{StaticResource FirstField}" Click="Button_Click"></Button>
+        <Button Content="" Grid.Row="0" Grid.Column="3" Style="{StaticResource SecondField}" Click="Button_Click"></Button>
+        <Button Content="" Grid.Row="0" Grid.Column="4" Style="{StaticResource FirstField}" Click="Button_Click"></Button>
+        <Button Content="" Grid.Row="0" Grid.Column="5" Style="{StaticResource SecondField}" Click="Button_Click"></Button>
+        <Button Content="" Grid.Row="0" Grid.Column="6" Style="{StaticResource FirstField}" Click="Button_Click"></Button>
+        <Button Content="" Grid.Row="0" Grid.Column="7" Style="{StaticResource SecondField}" Click="Button_Click"></Button>
         <Button Content="" Grid.Row="0" Grid.Column="8" Style="{StaticResource FirstField}"></Button>
 
-        <Button Content="" Grid.Row="1" Grid.Column="1" Style="{StaticResource FirstField}" />
-        <Button Content="" Grid.Row="1" Grid.Column="2" Style="{StaticResource SecondField}" />
-        <Button Content="" Grid.Row="1" Grid.Column="3" Style="{StaticResource FirstField}" />
-        <Button Content="" Grid.Row="1" Grid.Column="4" Style="{StaticResource SecondField}" />
-        <Button Content="" Grid.Row="1" Grid.Column="5" Style="{StaticResource FirstField}" />
-        <Button Content="" Grid.Row="1" Grid.Column="6" Style="{StaticResource SecondField}" />
-        <Button Content="" Grid.Row="1" Grid.Column="7" Style="{StaticResource FirstField}" />
-        <Button Content="" Grid.Row="1" Grid.Column="8" Style="{StaticResource SecondField}" />
+        <Button Content="" Grid.Row="1" Grid.Column="1" Style="{StaticResource FirstField}" Click="Button_Click" />
+        <Button Content="" Grid.Row="1" Grid.Column="2" Style="{StaticResource SecondField}" Click="Button_Click" />
+        <Button Content="" Grid.Row="1" Grid.Column="3" Style="{StaticResource FirstField}" Click="Button_Click" />
+        <Button Content="" Grid.Row="1" Grid.Column="4" Style="{StaticResource SecondField}" Click="Button_Click" />
+        <Button Content="" Grid.Row="1" Grid.Column="5" Style="{StaticResource FirstField}" Click="Button_Click" />
+        <Button Content="" Grid.Row="1" Grid.Column="6" Style="{StaticResource SecondField}" Click="Button_Click" />
+        <Button Content="" Grid.Row="1" Grid.Column="7" Style="{StaticResource FirstField}" Click="Button_Click" />
+        <Button Content="" Grid.Row="1" Grid.Column="8" Style="{StaticResource SecondField}" Click="Button_Click" />
 
-        <Button Content="" Grid.Row="2" Grid.Column="1" Style="{StaticResource SecondField}" />
-        <Button Content="" Grid.Row="2" Grid.Column="2" Style="{StaticResource FirstField}" />
-        <Button Content="" Grid.Row="2" Grid.Column="3" Style="{StaticResource SecondField}" />
-        <Button Content="" Grid.Row="2" Grid.Column="4" Style="{StaticResource FirstField}" />
-        <Button Content="" Grid.Row="2" Grid.Column="5" Style="{StaticResource SecondField}" />
-        <Button Content="" Grid.Row="2" Grid.Column="6" Style="{StaticResource FirstField}" />
-        <Button Content="" Grid.Row="2" Grid.Column="7" Style="{StaticResource SecondField}" />
-        <Button Content="" Grid.Row="2" Grid.Column="8" Style="{StaticResource FirstField}" />
+        <Button Content="" Grid.Row="2" Grid.Column="1" Style="{StaticResource SecondField}" Click="Button_Click" />
+        <Button Content="" Grid.Row="2" Grid.Column="2" Style="{StaticResource FirstField}" Click="Button_Click" />
+        <Button Content="" Grid.Row="2" Grid.Column="3" Style="{StaticResource SecondField}" Click="Button_Click" />
+        <Button Content="" Grid.Row="2" Grid.Column="4" Style="{StaticResource FirstField}" Click="Button_Click" />
+        <Button Content="" Grid.Row="2" Grid.Column="5" Style="{StaticResource SecondField}" Click="Button_Click" />
+        <Button Content="" Grid.Row="2" Grid.Column="6" Style="{StaticResource FirstField}" Click="Button_Click" />
+        <Button Content="" Grid.Row="2" Grid.Column="7" Style="{StaticResource SecondField}" Click="Button_Click" />
+        <Button Content="" Grid.Row="2" Grid.Column="8" Style="{StaticResource FirstField}" Click="Button_Click" />
 
-        <Button Content="" Grid.Row="3" Grid.Column="1" Style="{StaticResource FirstField}"  />
-        <Button Content="" Grid.Row="3" Grid.Column="2" Style="{StaticResource SecondField}" />
-        <Button Content="" Grid.Row="3" Grid.Column="3" Style="{StaticResource FirstField}" />
-        <Button Content="" Grid.Row="3" Grid.Column="4" Style="{StaticResource SecondField}" />
-        <Button Content="" Grid.Row="3" Grid.Column="5" Style="{StaticResource FirstField}" />
-        <Button Content="" Grid.Row="3" Grid.Column="6" Style="{StaticResource SecondField}" />
-        <Button Content="" Grid.Row="3" Grid.Column="7" Style="{StaticResource FirstField}" />
-        <Button Content="" Grid.Row="3" Grid.Column="8" Style="{StaticResource SecondField}" />
+        <Button Content="" Grid.Row="3" Grid.Column="1" Style="{StaticResource FirstField}" Click="Button_Click" />
+        <Button Content="" Grid.Row="3" Grid.Column="2" Style="{StaticResource SecondField}" Click="Button_Click" />
+        <Button Content="" Grid.Row="3" Grid.Column="3" Style="{StaticResource FirstField}" Click="Button_Click" />
+        <Button Content="" Grid.Row="3" Grid.Column="4" Style="{StaticResource SecondField}" Click="Button_Click" />
+        <Button Content="" Grid.Row="3" Grid.Column="5" Style="{StaticResource FirstField}" Click="Button_Click" />
+        <Button Content="" Grid.Row="3" Grid.Column="6" Style="{StaticResource SecondField}" Click="Button_Click" />
+        <Button Content="" Grid.Row="3" Grid.Column="7" Style="{StaticResource FirstField}" Click="Button_Click" />
+        <Button Content="" Grid.Row="3" Grid.Column="8" Style="{StaticResource SecondField}" Click="Button_Click" />
 
-        <Button Content="" Grid.Row="4" Grid.Column="1" Style="{StaticResource SecondField}" />
-        <Button Content="" Grid.Row="4" Grid.Column="2" Style="{StaticResource FirstField}" />
-        <Button Content="" Grid.Row="4" Grid.Column="3" Style="{StaticResource SecondField}" />
-        <Button Content="" Grid.Row="4" Grid.Column="4" Style="{StaticResource FirstField}" />
-        <Button Content="" Grid.Row="4" Grid.Column="5" Style="{StaticResource SecondField}" />
-        <Button Content="" Grid.Row="4" Grid.Column="6" Style="{StaticResource FirstField}" />
-        <Button Content="" Grid.Row="4" Grid.Column="7" Style="{StaticResource SecondField}" />
-        <Button Content="" Grid.Row="4" Grid.Column="8" Style="{StaticResource FirstField}" />
+        <Button Content="" Grid.Row="4" Grid.Column="1" Style="{StaticResource SecondField}" Click="Button_Click" />
+        <Button Content="" Grid.Row="4" Grid.Column="2" Style="{StaticResource FirstField}" Click="Button_Click" />
+        <Button Content="" Grid.Row="4" Grid.Column="3" Style="{StaticResource SecondField}" Click="Button_Click" />
+        <Button Content="" Grid.Row="4" Grid.Column="4" Style="{StaticResource FirstField}" Click="Button_Click" />
+        <Button Content="" Grid.Row="4" Grid.Column="5" Style="{StaticResource SecondField}" Click="Button_Click" />
+        <Button Content="" Grid.Row="4" Grid.Column="6" Style="{StaticResource FirstField}" Click="Button_Click" />
+        <Button Content="" Grid.Row="4" Grid.Column="7" Style="{StaticResource SecondField}" Click="Button_Click" />
+        <Button Content="" Grid.Row="4" Grid.Column="8" Style="{StaticResource FirstField}" Click="Button_Click" />
 
-        <Button Content="" Grid.Row="5" Grid.Column="1" Style="{StaticResource FirstField}" />
-        <Button Content="" Grid.Row="5" Grid.Column="2" Style="{StaticResource SecondField}" />
-        <Button Content="" Grid.Row="5" Grid.Column="3" Style="{StaticResource FirstField}" />
-        <Button Content="" Grid.Row="5" Grid.Column="4" Style="{StaticResource SecondField}" />
-        <Button Content="" Grid.Row="5" Grid.Column="5" Style="{StaticResource FirstField}" />
-        <Button Content="" Grid.Row="5" Grid.Column="6" Style="{StaticResource SecondField}" />
-        <Button Content="" Grid.Row="5" Grid.Column="7" Style="{StaticResource FirstField}" />
-        <Button Content="" Grid.Row="5" Grid.Column="8" Style="{StaticResource SecondField}" />
+        <Button Content="" Grid.Row="5" Grid.Column="1" Style="{StaticResource FirstField}" Click="Button_Click" />
+        <Button Content="" Grid.Row="5" Grid.Column="2" Style="{StaticResource SecondField}" Click="Button_Click" />
+        <Button Content="" Grid.Row="5" Grid.Column="3" Style="{StaticResource FirstField}" Click="Button_Click" />
+        <Button Content="" Grid.Row="5" Grid.Column="4" Style="{StaticResource SecondField}" Click="Button_Click" />
+        <Button Content="" Grid.Row="5" Grid.Column="5" Style="{StaticResource FirstField}" Click="Button_Click" />
+        <Button Content="" Grid.Row="5" Grid.Column="6" Style="{StaticResource SecondField}" Click="Button_Click" />
+        <Button Content="" Grid.Row="5" Grid.Column="7" Style="{StaticResource FirstField}" Click="Button_Click" />
+        <Button Content="" Grid.Row="5" Grid.Column="8" Style="{StaticResource SecondField}" Click="Button_Click" />
 
-        <Button Content="" Grid.Row="6" Grid.Column="1" Style="{StaticResource SecondField}" />
-        <Button Content="" Grid.Row="6" Grid.Column="2" Style="{StaticResource FirstField}" />
-        <Button Content="" Grid.Row="6" Grid.Column="3" Style="{StaticResource SecondField}" />
-        <Button Content="" Grid.Row="6" Grid.Column="4" Style="{StaticResource FirstField}" />
-        <Button Content="" Grid.Row="6" Grid.Column="5" Style="{StaticResource SecondField}" />
-        <Button Content="" Grid.Row="6" Grid.Column="6" Style="{StaticResource FirstField}" />
-        <Button Content="" Grid.Row="6" Grid.Column="7" Style="{StaticResource SecondField}" />
-        <Button Content="" Grid.Row="6" Grid.Column="8" Style="{StaticResource FirstField}" />
+        <Button Content="" Grid.Row="6" Grid.Column="1" Style="{StaticResource SecondField}" Click="Button_Click" />
+        <Button Content="" Grid.Row="6" Grid.Column="2" Style="{StaticResource FirstField}" Click="Button_Click" />
+        <Button Content="" Grid.Row="6" Grid.Column="3" Style="{StaticResource SecondField}" Click="Button_Click" />
+        <Button Content="" Grid.Row="6" Grid.Column="4" Style="{StaticResource FirstField}" Click="Button_Click" />
+        <Button Content="" Grid.Row="6" Grid.Column="5" Style="{StaticResource SecondField}" Click="Button_Click" />
+        <Button Content="" Grid.Row="6" Grid.Column="6" Style="{StaticResource FirstField}" Click="Button_Click" />
+        <Button Content="" Grid.Row="6" Grid.Column="7" Style="{StaticResource SecondField}" Click="Button_Click" />
+        <Button Content="" Grid.Row="6" Grid.Column="8" Style="{StaticResource FirstField}" Click="Button_Click" />
 
-        <Button Content="" Grid.Row="7" Grid.Column="1" Style="{StaticResource FirstField}" />
-        <Button Content="" Grid.Row="7" Grid.Column="2" Style="{StaticResource SecondField}" />
-        <Button Content="" Grid.Row="7" Grid.Column="3" Style="{StaticResource FirstField}" />
-        <Button Content="" Grid.Row="7" Grid.Column="4" Style="{StaticResource SecondField}" />
-        <Button Content="" Grid.Row="7" Grid.Column="5" Style="{StaticResource FirstField}" />
-        <Button Content="" Grid.Row="7" Grid.Column="6" Style="{StaticResource SecondField}" />
-        <Button Content="" Grid.Row="7" Grid.Column="7" Style="{StaticResource FirstField}" />
-        <Button Content="" Grid.Row="7" Grid.Column="8" Style="{StaticResource SecondField}" />
+        <Button Content="" Grid.Row="7" Grid.Column="1" Style="{StaticResource FirstField}" Click="Button_Click" />
+        <Button Content="" Grid.Row="7" Grid.Column="2" Style="{StaticResource SecondField}" Click="Button_Click" />
+        <Button Content="" Grid.Row="7" Grid.Column="3" Style="{StaticResource FirstField}" Click="Button_Click" />
+        <Button Content="" Grid.Row="7" Grid.Column="4" Style="{StaticResource SecondField}" Click="Button_Click" />
+        <Button Content="" Grid.Row="7" Grid.Column="5" Style="{StaticResource FirstField}" Click="Button_Click" />
+        <Button Content="" Grid.Row="7" Grid.Column="6" Style="{StaticResource SecondField}" Click="Button_Click" />
+        <Button Content="" Grid.Row="7" Grid.Column="7" Style="{StaticResource FirstField}" Click="Button_Click" />
+        <Button Content="" Grid.Row="7" Grid.Column="8" Style="{StaticResource SecondField}" Click="Button_Click" />
 
         <TextBlock Grid.Row="0" Grid.Column="0" Style="{StaticResource Incription}">8</TextBlock>
         <TextBlock Grid.Row="1" Grid.Column="0" Style="{StaticResource Incription}">7</TextBlock>
@@ -136,5 +138,15 @@
         <TextBlock Grid.Row="8" Grid.Column="6" Style="{StaticResource Incription}">f</TextBlock>
         <TextBlock Grid.Row="8" Grid.Column="7" Style="{StaticResource Incription}">g</TextBlock>
         <TextBlock Grid.Row="8" Grid.Column="8" Style="{StaticResource Incription}">h</TextBlock>
+
+        <TextBlock FontSize="32" Text="Chessmans" Grid.Column="9" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <ListBox Name="Chessmans" Grid.Column="9" Grid.ColumnSpan="2" Grid.RowSpan="4"  Margin="0,98,0,28" SelectionChanged="Chessmans_Selected">
+            <ListBoxItem Name="King" FontSize="28" BorderBrush="Black">King</ListBoxItem>
+            <ListBoxItem Name="Queen" FontSize="28" BorderBrush="Black">Queen</ListBoxItem>
+            <ListBoxItem Name="Bishop" FontSize="28" BorderBrush="Black">Bishop</ListBoxItem>
+            <ListBoxItem Name="Rook" FontSize="28" BorderBrush="Black">Rook</ListBoxItem>
+            <ListBoxItem Name="Knight" FontSize="28" BorderBrush="Black">Knight</ListBoxItem>
+            <ListBoxItem Name="Pawn" FontSize="28" BorderBrush="Black">Pawn</ListBoxItem>
+        </ListBox>
     </Grid>
 </Window>
