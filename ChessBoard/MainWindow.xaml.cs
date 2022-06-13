@@ -42,16 +42,7 @@ namespace ChessBoard
             {
                 if (chessman != null)
                 {
-                    if (chessman.isRightMove((sender as Button).Name))
-                    {
-                        ClearField();
-                        chessman.Move((sender as Button).Name);
-                    }
-                    else
-                    {
-                        MessageBox.Show("Incorrect move!", "Warning!", MessageBoxButton.OK, MessageBoxImage.Warning);
-                        return;
-                    }
+                    MoveChessman(sender as Button);
                 }
                 else
                 {
@@ -60,14 +51,34 @@ namespace ChessBoard
 
                 (sender as Button).Content = selectedChessman;
 
-                foreach (UIElement el in Chess.Children)
+                PouringCorrectMoves();
+            }
+        }
+
+        private void MoveChessman(Button btn)
+        {
+            if (chessman.isRightMove(btn.Name))
+            {
+                ClearField();
+                chessman.Move(btn.Name);
+            }
+            else
+            {
+                MessageBox.Show("Incorrect move!", "Warning!", MessageBoxButton.OK, MessageBoxImage.Warning);
+                return;
+            }
+        }
+
+        private void PouringCorrectMoves()
+        {
+            foreach (UIElement el in Chess.Children)
+            {
+                if (el is Button)
                 {
-                    if (el is Button)
+                    if ((el as Button).Name != "btnClear" 
+                        && chessman.isRightMove((el as Button).Name))
                     {
-                        if(chessman.isRightMove((el as Button).Name))
-                        {
-                            (el as Button).Background = Brushes.Green;
-                        }
+                        (el as Button).Background = Brushes.Green;
                     }
                 }
             }
@@ -79,18 +90,30 @@ namespace ChessBoard
             {
                 if (el is Button)
                 {
-                    if (((el as Button).Name[0] + (el as Button).Name[1]) % 2 == 0)
-                    {
-                        (el as Button).Background = Brushes.Black;
-                    }
-                    else
-                    {
-                        (el as Button).Background = Brushes.White;
-                    }
-
-                    (el as Button).Content = "";
+                    ClearButton(el as Button);
                 }
             }
-        }                                                                   
+        }
+        private void ClearButton(Button btn)
+        {
+            if (btn.Name != btnClear.Name)
+            {
+                if ((btn.Name[0] + btn.Name[1]) % 2 == 0)
+                {
+                    btn.Background = Brushes.Black;
+                }
+                else
+                {
+                    btn.Background = Brushes.White;
+                }
+
+                btn.Content = "";
+            }
+        }
+
+        private void btnClear_Click(object sender, RoutedEventArgs e)
+        {
+            ClearField();
+        }
     }
 }
