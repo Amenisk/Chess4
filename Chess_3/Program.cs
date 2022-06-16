@@ -1,4 +1,4 @@
-//Ziyatdinov Kamil 220 group "Chess 4" ?.06.2022
+//Ziyatdinov Kamil 220 group "Chess 4" 16.06.2022
 
 using System;
 using ChessCore;

@@ -1,4 +1,6 @@
-﻿using ChessCore;
+﻿//Ziyatdinov Kamil 220 group "Chess 4" 16.06.2022
+
+using ChessCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -46,10 +48,9 @@ namespace ChessBoard
                 }
                 else
                 {
+                    (sender as Button).Content = selectedChessman;
                     chessman = ChessmanMaker.MakeFigure(selectedChessman, (sender as Button).Name);
                 }
-
-                (sender as Button).Content = selectedChessman;
 
                 PouringCorrectMoves();
             }
@@ -61,6 +62,7 @@ namespace ChessBoard
             {
                 ClearField();
                 chessman.Move(btn.Name);
+                btn.Content = selectedChessman;
             }
             else
             {

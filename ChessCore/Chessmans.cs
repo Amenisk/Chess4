@@ -1,4 +1,6 @@
-﻿using System;
+﻿//Ziyatdinov Kamil 220 group "Chess 4" 16.06.2022
+
+using System;
 using System.Collections.Generic;
 
 namespace ChessCore
