@@ -131,8 +131,8 @@ namespace ChessCore
         public Queen(int x, int y) : base(x, y) { }
         public override bool isRightMove(int x, int y)
         {
-            return (Math.Abs(X - x) == Math.Abs(Y - y))
-                || (X == x || Y == y) && (X != x || Y != y);
+            return (X != x || Y != y) && ((Math.Abs(X - x) == Math.Abs(Y - y))
+                || (X == x || Y == y));
         }
     }
 
